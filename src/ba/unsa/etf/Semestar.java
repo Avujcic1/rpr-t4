@@ -2,14 +2,11 @@ package ba.unsa.etf;
 
 public abstract class Semestar  {
 
-    String imeSemestra = " ";
+    String imeSemestra = "";
     Predmet predmeti;
     int brojECTS = 0;
 
-    Semestar(String ime, int broj, ObavezniPredmet obavezni) {};
-
-    public Semestar(String imePrezimeStudenta, int index) {
-    }
+    public Semestar(String ime, int broj, ObavezniPredmet obavezni) {};
 
     String getStudent(Student s) {
         return s.imePrezimeStudenta;
@@ -33,5 +30,9 @@ public abstract class Semestar  {
 
     public void setECTS(int broj) {
         this.brojECTS = broj;
+    }
+
+    public String ispisi() {
+        return "";
     }
 }

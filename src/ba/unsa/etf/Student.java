@@ -2,19 +2,15 @@ package ba.unsa.etf;
 
 public class Student extends Semestar {
 
-    String imePrezimeStudenta = " ";
+    String imePrezimeStudenta = "";
     int index = 0;
     String semestar;
 
-    public Student(Student novi) {
-        super(novi.imePrezimeStudenta, novi.index);
+    public Student(String ime, int broj, ObavezniPredmet obavezni) {
+        super(ime, broj, obavezni);
     }
 
-    String ispisi() {
-        return null;
-    }
-
-    void izborni(IzborniPredmet novi) {}
+    void izborni(IzborniPredmet novi) {};
 
     int getIndex() {return index;}
 
@@ -32,6 +28,11 @@ public class Student extends Semestar {
 
     void setSemestar(String s) {
         this.semestar = s;
+    }
+
+    public String ispisi() {
+        String tekst = "";
+        return tekst;
     }
 
 }
