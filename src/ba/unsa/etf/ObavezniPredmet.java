@@ -6,13 +6,9 @@ public class ObavezniPredmet extends Predmet {
     int brojECTS = 0;
     Student BrStudenataNaPr;
 
-    public ObavezniPredmet(IzborniPredmet op) {
-        super();
-    }
+    public ObavezniPredmet(IzborniPredmet op) {};
 
-    private ObavezniPredmet() {
-
-    }
+    private ObavezniPredmet() {};
 
     String getImePredmeta() {
         return imePredmeta;
@@ -30,7 +26,7 @@ public class ObavezniPredmet extends Predmet {
         this.brojECTS = broj;
     }
 
-    void upisiStudenta(Student student) {}
+    void upisiStudenta(Student student) {};
 
     @Override
     public String ispisi() {

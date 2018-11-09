@@ -2,17 +2,16 @@ package ba.unsa.etf;
 
 public class IzborniPredmet extends Predmet {
 
-    String imePredmeta = " ";
+    String imePredmeta = "";
     int brojECTS = 0;
     Student BrStudenataNaPr;
 
     public IzborniPredmet(IzborniPredmet ip) {
-        super();
+        this.imePredmeta = ip.imePredmeta;
+        this.brojECTS = ip.brojECTS;
     }
 
-    private IzborniPredmet() {
-
-    }
+    private IzborniPredmet() {};
 
     String getImePredmeta() {
         return imePredmeta;
